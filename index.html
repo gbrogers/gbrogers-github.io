@@ -4,9 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GIselle Rogers - Portfolio</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Giselle Rogers</title>
   </head>
+  <nav id="home-nav">
+    <a href='#about'>About</a>
+    <a href='#skills'>Skills</a>
+    <a href='#projects'>Projects</a>
+    <a href='#experience'>Experience</a>
+    <a href='#education'>Education</a>
+    <a href='#footer'>Contact</a>
+
+  </nav>
+  
+  <div class="dropdown">
+    <button id='menu-icon'><img src='./src/menuicon.png' alt='menu icon'></button>
+    <div class="dropdown-content">
+        <a href='#about'>About</a>
+        <a href='#skills'>Skills</a>
+        <a href='#projects'>Projects</a>
+        <a href='#experience'>Experience</a>
+        <a href='#education'>Education</a>
+        <a href='#footer'>Contact</a>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div id="header-container">
+      
+      <div id="header-words">
+        <h1 id="main-title">Giselle Rogers</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ab
+          modi aut obcaecati sed ut aspernatur voluptas earum inventore possimus
+          porro id exercitationem eveniet repellendus, excepturi animi unde
+          fugiat laudantium!
+        </p>
+
+        <div id="button-container"><button class='main-btn'><a href='#about'>Learn More</a></button></div>
+      </div>
+    </div>
+  </header>
   <body>
-    <h1>Giselle Rogers</h1>
+    <section class="home-section" id="about">
+      <h2 id='about-title'>About Me</h2>
+      <div class='section-container'>
+          <img id="prof-pic" src="./src/profile.jpg" alt="profile picture" />
+            <p><strong>Software Engineer</strong> with a background in healthcare, clinical research, basic research, and environmental sciences. <br>
+          Passionate about empowering women and non-binary persons in all aspects of life, but especially within the tech industry.
+         </p></div>
+
+    </section>
+    <section class="home-section" id="skills">
+        <h2>Skills</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum
+          cumque praesentium quisquam adipisci vel fugiat pariatur dolore vitae
+          atque quam accusamus eaque explicabo asperiores, corrupti harum,
+          nesciunt illum. Aspernatur.
+        </p>
+    </section>
+    <section class="home-section" id="projects">
+        <h2>Projects</h2>
+        <div class='single-project' id='drinkz'>
+            <h3>Drinkz!</h3>
+            <p id='drinkz-words'>
+                <ul class='project-list'>
+                    <li>Functionality through Vanilla Javascript with DOM manipulation</li>
+                    <li>Fully designed and styled myself using HTML and CSS</li>
+                    <li>Requests made to theCocktailDB API, and external API to gather cocktail recipe data</li>
+                    <li>Deployed on Heroku</li>
+                </ul>
+            </p>
+            <div id='video-container'>
+                <video src="./src/Drinkz!_Demo.mkv" autoplay controls type="video/mp4">
+                </video>
+             </div>
+<a href='https://github.com/gbrogers/drink-app.git' target='_black'>Github Link</a>
+        </div>
+
+    </section>
+    </section>
+    <section class="home-section" id="experience">
+        <h2>Experience</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum
+          cumque praesentium quisquam adipisci vel fugiat pariatur dolore vitae
+          atque quam accusamus eaque explicabo asperiores, corrupti harum,
+          nesciunt illum. Aspernatur.
+        </p>
+        <button class='body-btn'><a href=''>Resume</a></button>
+    </section>
+    <section class="home-section" id="education">
+        <h2>Education</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum
+          cumque praesentium quisquam adipisci vel fugiat pariatur dolore vitae
+          atque quam accusamus eaque explicabo asperiores, corrupti harum,
+          nesciunt illum. Aspernatur.
+        </p>
+    </section>
+    <footer id='footer'>
+      <div class="form-container">
+        <h3 class="footer-title">Let's Get In Touch!</h3>
+        <div id="name-email">
+          <div id="names">
+            <label>Name: </label>
+            <input type="text" id="name" placeholder="enter name..." />
+          </div>
+          <div id="emails">
+            <label>Email: </label>
+            <input
+              type="text"
+              id="email"
+              placeholder="enter email address..."
+            />
+          </div>
+        </div>
+        <br /><br />
+        <div id="messages">
+          <label>Message:</label>
+          <textarea id="message" placeholder="enter message..."></textarea>
+        </div>
+        <div id="submit-btn"><button class='body-btn' id="send-btn">Send Message</button></div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-icons">
+          <div class="contact-items" id="location">
+            <img class="contact-icon" src="./src/locationsvg.png" />
+            <h4><strong>Location</strong><br />Salt Lake City, UT</h4>
+          </div>
+
+          <br />
+
+          <div class="contact-items" id="email">
+            <img class="contact-icon" src="./src/email.png" />
+            <h4><strong>Email</strong><br />giselle.b.rogers@gmail.com</h4>
+          </div>
+
+          <br />
+          <div class="contact-items" id="phone">
+            <img class="contact-icon" src="./src/phone.png" />
+            <h4><strong>Phone</strong><br />(801) 441-0981</h4>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="" target="_blank"
+            ><img class="social-icon" id="linkedin" src="./src/linkedin.png"
+          /></a>
+          <a href="" target="_blank"
+            ><img class="social-icon" id="github" src="./src/github.png"
+          /></a>
+
+          <a href="" target="_blank"
+            ><img class="social-icon" id="email-social" src="./src/email.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src='./index.js'></script>
   </body>
 </html>
