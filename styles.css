@@ -40,7 +40,7 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 330px;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -119,16 +119,7 @@ p {
 .main-btn a {
   all: unset;
 }
-.body-btn {
-  background-color: rgba(188, 143, 143, 0);
-  color: black;
-  font-size: 20px;
-  border: 2px black solid;
-  border-radius: 5px;
 
-  margin-top: 30px;
-  padding: 15px 40px;
-}
 #send-btn {
   padding: 15px 40px;
   margin-top: 20px;
@@ -137,15 +128,6 @@ p {
   cursor: pointer;
   transform: scale(1.09);
   background-color: rgba(238, 211, 247, 0.5);
-}
-
-.body-btn a {
-  all: unset;
-}
-.body-btn:hover {
-  cursor: pointer;
-  transform: scale(1.09);
-  background-color: rgba(238, 211, 247, 0.659);
 }
 
 #header-words {
@@ -307,6 +289,10 @@ h2 {
   border-radius: 50%;
   border: 3px black solid;
 }
+#about-container {
+  border: 3px dotted black;
+  padding: 30px;
+}
 
 /* PROJECTS SECTION */
 #video-container {
@@ -354,6 +340,64 @@ h2 {
   font-size: 20px;
   text-align: center;
   list-style-type: none;
+}
+/* EXPERIENCE SECTION */
+.body-btn {
+  background-color: rgba(188, 143, 143, 0);
+  color: black;
+  font-size: 20px;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 15px 15px;
+  width: 250px;
+}
+.body-btn a {
+  all: unset;
+}
+.body-btn:hover {
+  cursor: pointer;
+  transform: scale(1.09);
+  background-color: rgba(238, 211, 247, 0.659);
+}
+#experience-container {
+  display: flex;
+  flex-direction: column;
+}
+#experience-container section {
+  text-align: center;
+  border: 3px black dotted;
+  padding: 15px;
+}
+#pra {
+  margin-top: 30px;
+}
+#hci-duties {
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: left;
+}
+#pra-duties {
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* EDUCATION SECTION */
+#education-container {
+  display: flex;
+  flex-direction: column;
+}
+#education-container section {
+  text-align: center;
+  border: 3px black dotted;
+  padding: 15px;
+}
+#uwm {
+  margin-top: 30px;
+}
+#education-container h3 {
+  font-size: 30px;
 }
 
 /* MEDIA QUERY */
@@ -406,6 +450,29 @@ h2 {
   }
   .form-container {
     width: 50%;
+  }
+  .section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .section-container p {
+    margin-left: 50px;
+    margin-top: 0;
+    max-width: 900px;
+  }
+  #experience-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #pra {
+    margin-left: 30px;
+    max-width: 500px;
+  }
+  #hci {
+    margin-right: 30px;
+    max-width: 500px;
   }
 }
 
