@@ -85,10 +85,6 @@ p {
 #main-title {
   color: white;
   font-size: 80px;
-  display: flex;
-  justify-content: left;
-  width: 500px;
-  margin-bottom: 0px;
 }
 
 #header-words p {
@@ -416,7 +412,7 @@ video {
     height: 0;
   }
   #home-nav {
-    background-color: black;
+    background-color: #170517;
     position: sticky;
     top: 0;
     display: flex;
@@ -425,7 +421,7 @@ video {
     padding: 0 20px;
     z-index: 1000;
     height: 55px;
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     font-size: 30px;
     color: white;
   }
@@ -439,11 +435,14 @@ video {
   #header-words p {
     text-align: left;
     width: 800px;
+    margin-left: 215px;
   }
-  #button-container {
-    display: flex;
-    width: 500px;
-    justify-content: flex-end;
+  #main-title {
+    display: block;
+    margin-left: 215px;
+  }
+  .main-btn {
+    margin-left: 750px;
   }
   footer {
     display: flex;
