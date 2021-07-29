@@ -1,1 +1,1 @@
-centering of header p
+extra space on left side of page?
