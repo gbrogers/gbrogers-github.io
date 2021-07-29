@@ -142,7 +142,7 @@
                 </video>
                 <div id='project-links'>
                     <a id='git-link' href='https://github.com/gbrogers/drink-app.git' target='_black'>Github Link</a>
-                    <a id='app-link' href='https://github.com/gbrogers/drink-app.git' target='_black'>Application</a>
+                    <a id='app-link' href='https://cocktail-recipe-finder.herokuapp.com/' target='_black'>Application</a>
                 </div>
             </div>
             
@@ -195,17 +195,18 @@
          </div>
     </section>
     <footer id='footer'>
-      <div class="form-container">
+      <form   action="https://formspree.io/f/xpzkypqq"
+      method="POST" class="form-container">
         <h3 class="footer-title">Let's Get In Touch!</h3>
         <div id="name-email">
           <div id="names">
             <label>Name: </label>
-            <input type="text" id="name" placeholder="enter name..." />
+            <input name='name' type="text" id="name" placeholder="enter name..." />
           </div>
           <div id="emails">
             <label>Email: </label>
-            <input
-              type="text"
+            <input name='_replyto'
+              type="email"
               id="email"
               placeholder="enter email address..."
             />
@@ -214,10 +215,10 @@
         <br /><br />
         <div id="messages">
           <label>Message:</label>
-          <textarea id="message" placeholder="enter message..."></textarea>
+          <textarea id="message" name='message' placeholder="enter message..."></textarea>
         </div>
-        <div id="submit-btn"><button class='body-btn' id="send-btn">Send Message</button></div>
-      </div>
+        <div id="submit-btn"><button type='submit' class='body-btn' id="send-btn">Send Message</button></div>
+    </form>
 
       <div class="contact-container">
         <div class="contact-icons">
