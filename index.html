@@ -48,11 +48,11 @@
       <div class='section-container' id='about-container'>
           <img id="prof-pic" src="./src/profile.jpg" alt="profile picture" />
             <p>
-                Hello there! I'm Giselle, an energetic and eager <strong>Software Engineer</strong> 
+                Hello there! I'm <strong>Giselle</strong>, an energetic and eager <strong>Software Engineer</strong> 
                 with a background in healthcare, clinical research, basic research, and environmental 
                 sciences. I was drawn to software engineering for its versatility and the ability to
                 apply my previous experience to tomorrow's technology. I am excited by the fast-paced 
-                career that matches my passion for problem solving and lifelong learning. <br><br>
+                career that matches my passions for both problem solving and lifelong learning. <br><br>
                 I am an avid learner and love to push myself to the next level. Outside of work, I enjoy 
                 snowboarding, rollerblading, ultimate frisbee, flip flop tennis, and spending time at our 
                 family cabin in Northern Minnesota playing way-too-competitive card games. I love puzzle games, especially 
@@ -65,12 +65,61 @@
     </section>
     <section class="home-section" id="skills">
         <h2>Skills</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum
-          cumque praesentium quisquam adipisci vel fugiat pariatur dolore vitae
-          atque quam accusamus eaque explicabo asperiores, corrupti harum,
-          nesciunt illum. Aspernatur.
-        </p>
+        <section id='skill-icons'>
+            <div class='skill-icon'>
+                <img src='./src/js.png' alt='JS icon'
+                ><p>JavaScript</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/react.png' alt='React icon'
+                ><p>React</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/nodejs.png' alt='NodeJS icon'
+                ><p>NodeJS</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/html.png' alt='HTML icon'
+                ><p>HTML</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/css.png' alt='CSS icon'
+                ><p>CSS</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/expressicon.png' alt='Express icon'
+                ><p>Express</p>
+            </div>
+            <div id='axios' class='skill-icon'>
+                <img src='./src/axios.png' alt='axios icon'
+                ><p>Axios</p>
+            </div>
+            <div class='skill-icon'>
+                <img  src='./src/github.png' alt='GitHub icon'
+                ><p>GitHub</p>
+            </div>
+         
+            <div class='skill-icon'>
+                <img src='./src/git.png' alt='Git icon'
+                ><p>Git</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/heroku.png' alt='Heroku'
+                ><p>Heroku</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/postgreSQL.png' alt='PostgreSQL'
+                ><p>PostgreSQL</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/redux.png' alt='Redux'
+                ><p>Redux</p>
+            </div>
+            <div class='skill-icon'>
+                <img src='./src/gatsby.png' alt='Gatsby'
+                ><p>Gatsby</p>
+            </div>
+        </section>
     </section>
     <section class="home-section" id="projects">
         <h2>Projects</h2>
@@ -80,6 +129,7 @@
                 <h3>Drinkz!</h3>
                 <p id='drinkz-words'>
                     <ul class='project-list'>
+                        <li>First full stack application prior to learning React</li>
                         <li>Functionality through Vanilla Javascript with DOM manipulation</li>
                         <li>Fully designed and styled myself using HTML and CSS</li>
                         <li>Requests made to theCocktailDB API, and external API to gather cocktail recipe data</li>
@@ -90,7 +140,10 @@
             <div id='video-container'>
                 <video src="./src/Drinkz!_Demo.mkv" controls type="video/mp4">
                 </video>
-                <a href='https://github.com/gbrogers/drink-app.git' target='_black'>Github Link</a>
+                <div id='project-links'>
+                    <a id='git-link' href='https://github.com/gbrogers/drink-app.git' target='_black'>Github Link</a>
+                    <a id='app-link' href='https://github.com/gbrogers/drink-app.git' target='_black'>Application</a>
+                </div>
             </div>
             
         </div>
@@ -123,7 +176,7 @@
                 
             </section>
         </div>
-        <button class='body-btn'><a href=''>See Full Resume</a></button>
+        <button class='body-btn'><a href='' target='_blank'>See Full Resume</a></button>
     </section>
     <section class="home-section" id="education">
         <h2>Education</h2>
@@ -194,7 +247,7 @@
             ><img class="social-icon" id="github" src="./src/github.png"
           /></a>
 
-          <a href="" target="_blank"
+          <a href="mailto:giselle.b.rogers@gmail.com" target="_blank"
             ><img class="social-icon" id="email-social" src="./src/email.png"
           /></a>
         </div>
