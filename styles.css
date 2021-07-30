@@ -1,12 +1,17 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: content-box;
+  /* outline: 1px solid red; */
+  scroll-behavior: smooth;
+  scroll-margin: 100px;
 }
 body {
   width: 100%;
+  background: whitesmoke;
 }
 p {
-  font-size: 20px;
+  font-size: 16px;
 }
 /* DROPDOWN MENU */
 #menu-icon img {
@@ -40,7 +45,7 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
-  margin-top: 330px;
+  margin-top: 323px;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -84,15 +89,17 @@ p {
 
 #main-title {
   color: white;
-  font-size: 90px;
+  font-size: 5rem;
+  text-align: center;
 }
 
 #header-words p {
   color: white;
   font-size: 25px;
   text-align: center;
-  width: 550px;
-  margin-top: 20px;
+  /* width: 550px; */
+  margin: 20px;
+  margin: 2% 10% 5% 10%;
 }
 #button-container {
   display: flex;
@@ -104,7 +111,6 @@ p {
   font-size: 20px;
   border: 2px white solid;
   border-radius: 5px;
-  margin-top: 30px;
   padding: 15px 40px;
 }
 .main-btn:hover {
@@ -117,7 +123,7 @@ p {
 }
 
 #send-btn {
-  padding: 15px 40px;
+  /* padding: 15px 40px; */
   margin-top: 20px;
 }
 #send-btn:hover {
@@ -144,10 +150,13 @@ footer {
 .footer-title {
   font-size: 40px;
   padding: 30px;
+  text-align: center;
 }
 .contact-container {
   padding: 30px;
   border-top: 3px solid black;
+  padding-left: 10px;
+  margin-top: 1.5em;
   /* font-size: 20px; */
 }
 
@@ -171,30 +180,29 @@ footer {
 
 #name-email {
   display: inline-flex;
+  flex-direction: column;
   width: 100%;
 }
 #name-email div {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 #email {
-  width: 78%;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
 }
 #name {
-  width: 78%;
   border-radius: 5px;
   padding: 10px;
   font-size: 15px;
 }
 #message {
-  width: 90%;
   height: 200px;
   border-radius: 5px;
-  padding: 10px;
   font-size: 15px;
+  padding: 10px;
 }
 #names label {
   margin-bottom: 10px;
@@ -209,28 +217,27 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  margin-top: 10px;
 }
 #messages label {
   margin-bottom: 10px;
   font-weight: 1000;
 }
 
-.form-container div {
-  width: 100%;
-}
 .form-container {
-  width: 90%;
-  padding: 30px;
+  width: 100%;
+  /* padding: 30px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 .contact-items h4 {
   margin-left: 30px;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 /* SOCIAL ICONS */
@@ -243,28 +250,29 @@ footer {
 }
 
 #github {
-  height: 100px;
+  height: 90px;
 }
 #linkedin {
-  height: 70px;
+  height: 60px;
 }
 #email-social {
-  height: 80px;
+  height: 70px;
 }
 .social-icons {
   margin-top: 30px;
-  width: 300px;
+  /* width: 300px; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .home-section {
-  padding: 60px;
+  padding-bottom: 8%;
   background-color: whitesmoke;
   border-bottom: 3px black solid;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 8% 0;
 }
 .section-container {
   display: flex;
@@ -288,16 +296,27 @@ h2 {
 }
 strong {
   color: #1e051e;
-  font-size: 23px;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 #prof-pic {
   width: 300px;
   border-radius: 10%;
   border: 3px black solid;
 }
+/* #about {
+  scroll-margin: 100px;
+} */
+
 #about-container {
   border: 3px dotted #e3d8e7;
-  padding: 40px;
+  padding: 5%;
+  margin: 0 10%;
+  /* padding: 40px; */
+}
+
+#about-container > p {
+  margin: 5% 9%;
 }
 
 /* PROJECTS SECTION */
@@ -310,10 +329,10 @@ strong {
   width: 80%;
   margin: 30px;
 }
-#drinkz-words {
+/* #drinkz-words {
   min-width: 400px;
-}
-#drinkz a {
+} */
+#drinkzD a {
   all: unset;
   border: black 1px solid;
   padding: 5px 10px;
@@ -326,12 +345,14 @@ strong {
 }
 .single-project {
   border: black 3px dotted;
-  padding: 30px;
+  /* padding: 30px; */
 }
 #drinkz {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 5%;
+  padding: 5% 0;
 }
 #left-drink {
   display: flex;
@@ -339,14 +360,14 @@ strong {
   align-items: center;
 
   border-radius: 5%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 #drinkz h3 {
   font-size: 65px;
   display: flex;
   justify-content: center;
   width: 300px;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 3%;
   margin-bottom: 15px;
   color: whitesmoke;
@@ -373,11 +394,13 @@ video {
   width: 300px;
 }
 
-#git-link {
+.project-link-btn {
+  all: unset;
   margin-right: 10px;
-}
-#app-link {
-  margin-left: 10px;
+  border: 1px black solid;
+  border-radius: 5%;
+  text-align: center;
+  padding: 0.3em 0.5em;
 }
 /* SKILLS SECTION */
 
@@ -433,10 +456,10 @@ video {
   text-align: center;
   border: 3px #e3d8e7 dotted;
   padding: 15px;
+  max-width: 70%;
+  margin: 1% auto;
 }
-#pra {
-  margin-top: 30px;
-}
+
 #hci-duties {
   margin-left: 30px;
   margin-top: 10px;
@@ -449,6 +472,11 @@ video {
 }
 
 /* EDUCATION SECTION */
+
+#education {
+  margin-bottom: 0;
+}
+
 #education-container {
   display: flex;
   flex-direction: column;
@@ -470,6 +498,14 @@ video {
   .dropdown {
     display: none;
     height: 0;
+  }
+  #name {
+    margin-right: 15px;
+  }
+  #name-email {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
   }
   #home-nav {
     background-color: #170517;
@@ -494,15 +530,15 @@ video {
     all: unset;
   }
   #header-words {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     padding: 0 20%;
-    margin-left: 10%;
-    padding-left: 25%;
+    /* margin-left: 10%;
+    padding-left: 25%; */
   }
   #header-words p {
     display: block;
-    text-align: left;
+    /* text-align: left; */
     max-width: 80%;
   }
   #main-title {
@@ -537,12 +573,13 @@ video {
     justify-content: center;
     align-items: center;
   }
+  #experience-container section {
+    margin: 20px;
+  }
   #pra {
-    margin-left: 30px;
     max-width: 500px;
   }
   #hci {
-    margin-right: 30px;
     max-width: 500px;
   }
   #drinkz {
@@ -558,10 +595,10 @@ video {
   }
   #uwm {
     margin-left: 30px;
+    margin-top: 0;
   }
   #devm {
     margin-right: 30px;
-    height: 100px;
   }
 }
 
