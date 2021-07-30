@@ -466,7 +466,7 @@ video {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .dropdown {
     display: none;
     height: 0;
