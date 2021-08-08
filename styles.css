@@ -208,10 +208,12 @@ footer {
   margin-bottom: 10px;
   margin-right: 10px;
   font-weight: 1000;
+  margin-top: 10px;
 }
 #emails label {
   margin-bottom: 10px;
   font-weight: 1000;
+  margin-top: 10px;
 }
 #messages {
   display: flex;
