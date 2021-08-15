@@ -354,27 +354,26 @@ video {
 }
 #drinkz h3 {
   font-size: 65px;
-  display: flex;
-  justify-content: center;
-  width: 300px;
-  border-radius: 3%;
-  margin-bottom: 15px;
   color: whitesmoke;
   text-shadow: 0 0 15px #0ff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-image: linear-gradient(rgb(0, 0, 0), rgb(60, 60, 60));
 }
-#quizzies h3 {
-  font-size: 60px;
+.single-project h3 {
   display: flex;
   justify-content: center;
   width: 300px;
-  /* padding: 10px; */
   border-radius: 3%;
   margin-bottom: 15px;
+}
+#quizzies h3 {
+  font-size: 60px;
   color: hotpink;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#quizzies {
+  margin-top: 30px;
 }
 .project-list {
   font-size: 20px;
@@ -506,6 +505,7 @@ video {
     flex-direction: row;
     width: 100%;
   }
+
   #home-nav {
     background-color: #170517;
     position: sticky;
